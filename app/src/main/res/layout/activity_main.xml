@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="false"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"
+            android:id="@+id/user_image"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="Loading..."
+            android:textColor="@color/colorWhite"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/scores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:text="Score:\nHigh Score: "
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayout1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/game"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/button_background"
+
+            android:text="PLAY" />
+
+
+        <Button
+            android:id="@+id/leaderboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="7dp"
+            android:text="LeaderBoard" />
+
+
+        <Button
+            android:id="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="7dp"
+            android:text="Profile" />
+
+        <Button
+            android:id="@+id/profilephoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="7dp"
+            android:text="Update Profile Image" />
+
+        <Button
+            android:id="@+id/signOutbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/textColor"
+
+            android:text="Sign Out" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
